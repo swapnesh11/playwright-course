@@ -16,7 +16,8 @@ jobs:
       - name: Run tests
         run: |
               echo "Start shopping store application"
-              chmod +x ./shopping-store-linux-amd64 &
+              chmod +x ./shopping-store-linux-amd64
+              ./shopping-store-linux-amd64 &
               echo "installing dependencies from lockfile"
               npm ci
               echo "run Playwright tests"
